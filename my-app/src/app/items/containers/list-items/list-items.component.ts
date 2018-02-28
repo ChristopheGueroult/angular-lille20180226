@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { COLLECTION } from '../../../core/collection';
 import { CollectionService } from '../../../core/services/collection/collection.service';
 import { Item } from '../../../shared/models/item.model';
+import { Observable } from 'rxjs/Observable';
+import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-list-items',
@@ -10,15 +12,13 @@ import { Item } from '../../../shared/models/item.model';
   styleUrls: ['./list-items.component.scss']
 })
 export class ListItemsComponent implements OnInit {
-  collection: Item[];
-  // constructor(public collectionService: CollectionService) {
-  // }
-  constructor(public collectionService: CollectionService) {
+
+  collection$: Observable<Item[]>;
+  constructor(private collectionService: CollectionService) {
   }
 
   ngOnInit() {
-    this.collection = this.collectionService.getCollection();
-    // this.collection = this.collectionService.collection; // if collectionService.collection public
+    this.collection$ = this.collectionService.collection$;
   }
 
 }
