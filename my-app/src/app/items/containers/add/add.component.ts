@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Item } from '../../../shared/models/item.model';
 
 @Component({
   selector: 'app-add',
@@ -10,6 +11,10 @@ export class AddComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  addItem(obj: Item): void {
+    console.log(obj);
   }
 
 }

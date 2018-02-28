@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { COLLECTION } from '../../../core/collection';
+import { CollectionService } from '../../../core/services/collection/collection.service';
 import { Item } from '../../../shared/models/item.model';
 
 @Component({
@@ -10,10 +11,14 @@ import { Item } from '../../../shared/models/item.model';
 })
 export class ListItemsComponent implements OnInit {
   collection: Item[];
-  constructor() { }
+  // constructor(public collectionService: CollectionService) {
+  // }
+  constructor(public collectionService: CollectionService) {
+  }
 
   ngOnInit() {
-    this.collection = COLLECTION;
+    this.collection = this.collectionService.getCollection();
+    // this.collection = this.collectionService.collection; // if collectionService.collection public
   }
 
 }

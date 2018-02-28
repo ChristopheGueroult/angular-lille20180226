@@ -10,6 +10,7 @@ import { PageNotFoundModule } from './page-not-found/page-not-found.module';
 import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
+import { CollectionService } from './core/services/collection/collection.service';
 import { environment } from '../environments/environment';
 
 @NgModule({
@@ -25,7 +26,9 @@ import { environment } from '../environments/environment';
   declarations: [
     AppComponent
   ],
-  providers: [],
+  providers: [
+    CollectionService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

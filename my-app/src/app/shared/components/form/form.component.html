@@ -1,24 +1,22 @@
-<form class="form" #form="ngForm" (ngSubmit)="process(form)">
+<form class="form" [formGroup]="form" (ngSubmit)="process()" novalidate>
 
   <div class="form-group">
-    <input type="text" class="form-control" name="name" [(ngModel)]="nom" #nameFormControl="ngModel">
-    <div class="alert alert-danger" role="alert" *ngIf="nameFormControl.invalid && nameFormControl.touched">
+    <input type="text" class="form-control" formControlName="name" placeholder="Nom et prénom">
+    <div class="alert alert-danger" role="alert" *ngIf="isError('name')">
       Champs invalid !
     </div>
   </div>
 
   <div class="form-group">
-    <input type="text" class="form-control" name="reference" [(ngModel)]="ref" #refFormControl="ngModel">
-    <div class="alert alert-danger" role="alert" *ngIf="refFormControl.invalid && nameFormControl.touched">
-        Champs invalid !
-      </div>
+    <input type="text" class="form-control" formControlName="reference" placeholder="Ref. ex : 1234">
+    <div class="alert alert-danger" role="alert" *ngIf="isError('reference')">
+      Champs invalid !
+    </div>
   </div>
 
   <div class="form-group">
-    <select class="form-control" name="state" [(ngModel)]="etat">
-      <option [ngValue]="state.ALIVRER">{{ state.ALIVRER }}</option>
-      <option [ngValue]="state.ENCOURS">{{ state.ENCOURS }}</option>
-      <option [ngValue]="state.LIVREE">{{ state.LIVREE }}</option>
+    <select class="form-control" formControlName="state">
+      <option *ngFor="let libelle of libelles" [ngValue]="libelle">{{ libelle }}</option>
     </select>
   </div>
 
