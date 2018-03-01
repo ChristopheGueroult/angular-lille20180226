@@ -1,9 +1,8 @@
 <div class="card">
   <div class="card-header">
-    <!-- <span class="state-alivrer" *ngIf="state.ALIVRER === item.state">{{ item.state }}</span>
-    <span class="state-encours" *ngIf="state.ENCOURS === item.state">{{ item.state }}</span>
-    <span class="state-livree" *ngIf="state.LIVREE === item.state">{{ item.state }}</span> -->
     <span [appState]="item.state">{{ item.state }}</span>
+    <i class="material-icons float-right" (click)="delete(item)">delete_forever</i>
+    <a class="material-icons float-right" [routerLink]="['/items/edit', item.id]">mode_edit</a>
   </div>
   <div class="card-body">
     <h5 class="card-title">{{ item.name | uppercase }}</h5>

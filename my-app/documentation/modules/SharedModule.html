@@ -1,0 +1,798 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>my-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">my-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">my-app documentation</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-fw fa-th"></span>Overview
+                                    </a>
+                                </li>
+                                <li class="link">
+                                  <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../dependencies.html"
+                                        
+                                        >
+                                        <span class="fa fa-fw fa-list"></span>Dependencies
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <div class="menu-toggler linked" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            >
+                                <span class="fa fa-fw fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
+                        </a>
+                        <ul class="links collapse "
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/AppRoutingModule.html" >AppRoutingModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/CoreModule.html" >CoreModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/HomeModule.html" >HomeModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/HomeRoutingModule.html" >HomeRoutingModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/ItemsModule.html" >ItemsModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/ItemsRoutingModule.html" >ItemsRoutingModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/PageNotFoundModule.html" >PageNotFoundModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/PageNotFoundRoutingModule.html" >PageNotFoundRoutingModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/SharedModule.html"  data-type="entity-link" class="active" >SharedModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
+                            <span class="fa fa-fw fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AddComponent.html" >AddComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/FormComponent.html" >FormComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/HomeComponent.html" >HomeComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/ItemComponent.html" >ItemComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/ListItemsComponent.html" >ListItemsComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/NavComponent.html" >NavComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PageNotFoundComponent.html" >PageNotFoundComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-directives-links"
+                            >
+                            <span class="fa fa-fw fa-code"></span>
+                            <span>Directives</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="../directives/StateDirective.html" >StateDirective</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-fw fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/CollectionService.html" >CollectionService</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-interfaces-links"
+                            >
+                            <span class="fa fa-fw fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="../interfaces/Item.html" >Item</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-pipes-links"
+                            >
+                            <span class="fa fa-fw fa-plus"></span>
+                            <span>Pipes</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-pipes-links"
+                            >
+                                <li class="link">
+                                    <a href="../pipes/StarsPipe.html" >StarsPipe</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-fw fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-fw fa-code-fork"></span>Routes</a>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+                    <li class="divider"></li>
+                    <li class="copyright">
+                            Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                        <img src="../images/compodoc-vectorise.svg" class="img-responsive">
+                            </a>
+                    </li>
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">my-app documentation</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-fw fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../dependencies.html"
+                                               
+                                               >
+                                               <span class="fa fa-fw fa-list"></span>Dependencies
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <div class="menu-toggler linked" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   >
+                                       <span class="fa fa-fw fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
+                               </a>
+                               <ul class="links collapse "
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/AppRoutingModule.html" >AppRoutingModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/CoreModule.html" >CoreModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/HomeModule.html" >HomeModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/HomeRoutingModule.html" >HomeRoutingModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/ItemsModule.html" >ItemsModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/ItemsRoutingModule.html" >ItemsRoutingModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/PageNotFoundModule.html" >PageNotFoundModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/PageNotFoundRoutingModule.html" >PageNotFoundRoutingModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/SharedModule.html"  data-type="entity-link" class="active" >SharedModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
+                                   <span class="fa fa-fw fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AddComponent.html" >AddComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/FormComponent.html" >FormComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/HomeComponent.html" >HomeComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/ItemComponent.html" >ItemComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/ListItemsComponent.html" >ListItemsComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/NavComponent.html" >NavComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PageNotFoundComponent.html" >PageNotFoundComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#directives-links"
+                   >
+                                   <span class="fa fa-fw fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="../directives/StateDirective.html" >StateDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-fw fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/CollectionService.html" >CollectionService</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#interfaces-links"
+                   >
+                                   <span class="fa fa-fw fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="../interfaces/Item.html" >Item</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#pipes-links"
+                   >
+                                   <span class="fa fa-fw fa-plus"></span>
+                                   <span>Pipes</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="pipes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../pipes/StarsPipe.html" >StarsPipe</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-fw fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-fw fa-code-fork"></span>Routes</a>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                           <li class="copyright">
+                                   Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                               <img src="../images/compodoc-vectorise.svg" class="img-responsive">
+                                   </a>
+                           </li>
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content module">
+                   <div class="content-data">
+
+
+
+<ol class="breadcrumb">
+  <li>Modules</li>
+  <li>SharedModule</li>
+</ol>
+
+      <div class="text-center module-graph-container">
+          <div id="module-graph-svg">
+              <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: dependencies Pages: 1 -->
+<svg width="506pt" height="284pt"
+ viewBox="0.00 0.00 506.00 284.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 280)">
+<title>dependencies</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-280 502,-280 502,4 -4,4"/>
+<text text-anchor="start" x="228.0091" y="-42.4" font-family="sans-serif" font-weight="bold" font-size="14.00" fill="#000000">Legend</text>
+<polygon fill="#ffffb3" stroke="transparent" points="15,-10 15,-30 35,-30 35,-10 15,-10"/>
+<text text-anchor="start" x="38.629" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Declarations</text>
+<polygon fill="#8dd3c7" stroke="transparent" points="128,-10 128,-30 148,-30 148,-10 128,-10"/>
+<text text-anchor="start" x="151.7251" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Module</text>
+<polygon fill="#80b1d3" stroke="transparent" points="214,-10 214,-30 234,-30 234,-10 214,-10"/>
+<text text-anchor="start" x="237.7812" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Bootstrap</text>
+<polygon fill="#fdb462" stroke="transparent" points="311,-10 311,-30 331,-30 331,-10 311,-10"/>
+<text text-anchor="start" x="334.6732" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Providers</text>
+<polygon fill="#fb8072" stroke="transparent" points="407,-10 407,-30 427,-30 427,-10 407,-10"/>
+<text text-anchor="start" x="430.7258" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Exports</text>
+<g id="clust1" class="cluster">
+<title>cluster_SharedModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="8,-70 8,-268 490,-268 490,-70 8,-70"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_SharedModule_declarations</title>
+<polygon fill="none" stroke="#000000" points="25,-78 25,-130 475,-130 475,-78 25,-78"/>
+</g>
+<g id="clust8" class="cluster">
+<title>cluster_SharedModule_exports</title>
+<polygon fill="none" stroke="#000000" points="16,-208 16,-260 482,-260 482,-208 16,-208"/>
+</g>
+<!-- NavComponent -->
+<g id="node1" class="node">
+<title>NavComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="467.1542,-122 362.8458,-122 362.8458,-86 467.1542,-86 467.1542,-122"/>
+<text text-anchor="middle" x="415" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">NavComponent</text>
+</g>
+<!-- SharedModule -->
+<g id="node5" class="node">
+<title>SharedModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="249.4231,-187 246.4231,-191 225.4231,-191 222.4231,-187 150.5769,-187 150.5769,-151 249.4231,-151 249.4231,-187"/>
+<text text-anchor="middle" x="200" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">SharedModule</text>
+</g>
+<!-- NavComponent&#45;&gt;SharedModule -->
+<g id="edge1" class="edge">
+<title>NavComponent&#45;&gt;SharedModule</title>
+<path fill="none" stroke="#000000" d="M433.5256,-122.0225C433.5256,-139.3734 433.5256,-163 433.5256,-163 433.5256,-163 259.2394,-163 259.2394,-163"/>
+<polygon fill="#000000" stroke="#000000" points="259.2395,-159.5001 249.2394,-163 259.2394,-166.5001 259.2395,-159.5001"/>
+</g>
+<!-- StateDirective -->
+<g id="node2" class="node">
+<title>StateDirective</title>
+<polygon fill="#ffffb3" stroke="#000000" points="345.0758,-122 248.9242,-122 248.9242,-86 345.0758,-86 345.0758,-122"/>
+<text text-anchor="middle" x="297" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">StateDirective</text>
+</g>
+<!-- StateDirective&#45;&gt;SharedModule -->
+<g id="edge2" class="edge">
+<title>StateDirective&#45;&gt;SharedModule</title>
+<path fill="none" stroke="#000000" d="M248.5821,-104C243.5328,-104 240.2013,-104 240.2013,-104 240.2013,-104 240.2013,-140.8939 240.2013,-140.8939"/>
+<polygon fill="#000000" stroke="#000000" points="236.7013,-140.8938 240.2013,-150.8939 243.7013,-140.8939 236.7013,-140.8938"/>
+</g>
+<!-- StarsPipe -->
+<g id="node3" class="node">
+<title>StarsPipe</title>
+<polygon fill="#ffffb3" stroke="#000000" points="231.3809,-122 162.6191,-122 162.6191,-86 231.3809,-86 231.3809,-122"/>
+<text text-anchor="middle" x="197" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">StarsPipe</text>
+</g>
+<!-- StarsPipe&#45;&gt;SharedModule -->
+<g id="edge3" class="edge">
+<title>StarsPipe&#45;&gt;SharedModule</title>
+<path fill="none" stroke="#000000" d="M197,-122.1061C197,-122.1061 197,-140.991 197,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="193.5001,-140.9909 197,-150.991 200.5001,-140.991 193.5001,-140.9909"/>
+</g>
+<!-- FormComponent -->
+<g id="node4" class="node">
+<title>FormComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="144.6667,-122 33.3333,-122 33.3333,-86 144.6667,-86 144.6667,-122"/>
+<text text-anchor="middle" x="89" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">FormComponent</text>
+</g>
+<!-- FormComponent&#45;&gt;SharedModule -->
+<g id="edge4" class="edge">
+<title>FormComponent&#45;&gt;SharedModule</title>
+<path fill="none" stroke="#000000" d="M144.8863,-104C151.8994,-104 156.6743,-104 156.6743,-104 156.6743,-104 156.6743,-140.8939 156.6743,-140.8939"/>
+<polygon fill="#000000" stroke="#000000" points="153.1743,-140.8938 156.6743,-150.8939 160.1743,-140.8939 153.1743,-140.8938"/>
+</g>
+<!-- NavComponent  -->
+<g id="node6" class="node">
+<title>NavComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="474.1537,-252 365.8463,-252 365.8463,-216 474.1537,-216 474.1537,-252"/>
+<text text-anchor="middle" x="420" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">NavComponent </text>
+</g>
+<!-- SharedModule&#45;&gt;NavComponent  -->
+<g id="edge5" class="edge">
+<title>SharedModule&#45;&gt;NavComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M249.3701,-175C308.5142,-175 399.7244,-175 399.7244,-175 399.7244,-175 399.7244,-205.9775 399.7244,-205.9775"/>
+<polygon fill="#000000" stroke="#000000" points="396.2245,-205.9774 399.7244,-215.9775 403.2245,-205.9775 396.2245,-205.9774"/>
+</g>
+<!-- StateDirective  -->
+<g id="node7" class="node">
+<title>StateDirective </title>
+<polygon fill="#fb8072" stroke="#000000" points="347.5767,-252 248.4233,-252 248.4233,-216 347.5767,-216 347.5767,-252"/>
+<text text-anchor="middle" x="298" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">StateDirective </text>
+</g>
+<!-- SharedModule&#45;&gt;StateDirective  -->
+<g id="edge6" class="edge">
+<title>SharedModule&#45;&gt;StateDirective </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M239.2013,-187.1061C239.2013,-206.3391 239.2013,-234 239.2013,-234 239.2013,-234 240.12,-234 240.12,-234"/>
+<polygon fill="#000000" stroke="#000000" points="238.3886,-237.5001 248.3886,-234 238.3885,-230.5001 238.3886,-237.5001"/>
+</g>
+<!-- StarsPipe  -->
+<g id="node8" class="node">
+<title>StarsPipe </title>
+<polygon fill="#fb8072" stroke="#000000" points="230.3818,-252 157.6182,-252 157.6182,-216 230.3818,-216 230.3818,-252"/>
+<text text-anchor="middle" x="194" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">StarsPipe </text>
+</g>
+<!-- SharedModule&#45;&gt;StarsPipe  -->
+<g id="edge7" class="edge">
+<title>SharedModule&#45;&gt;StarsPipe </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M194,-187.1061C194,-187.1061 194,-205.991 194,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="190.5001,-205.9909 194,-215.991 197.5001,-205.991 190.5001,-205.9909"/>
+</g>
+<!-- FormComponent  -->
+<g id="node9" class="node">
+<title>FormComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="139.6663,-252 24.3337,-252 24.3337,-216 139.6663,-216 139.6663,-252"/>
+<text text-anchor="middle" x="82" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">FormComponent </text>
+</g>
+<!-- SharedModule&#45;&gt;FormComponent  -->
+<g id="edge8" class="edge">
+<title>SharedModule&#45;&gt;FormComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M154.2993,-187.1061C154.2993,-206.3391 154.2993,-234 154.2993,-234 154.2993,-234 149.6684,-234 149.6684,-234"/>
+<polygon fill="#000000" stroke="#000000" points="149.6685,-230.5001 139.6684,-234 149.6684,-237.5001 149.6685,-230.5001"/>
+</g>
+</g>
+</svg>
+
+          </div>
+          <i id="fullscreen" class="fa fa-expand module-graph-fullscreen-btn" aria-hidden="true"></i>
+          <div class="btn-group">
+              <button id="zoom-in" class="btn btn-default btn-sm">Zoom in</button>
+              <button id="reset" class="btn btn-default btn-sm">Reset</button>
+              <button id="zoom-out" class="btn btn-default btn-sm">Zoom out</button>
+          </div>
+      </div>
+      <script src="../js/libs/svg-pan-zoom.min.js"></script>
+      <script src="../js/svg-pan-zoom.controls.js"></script>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/shared/shared.module.ts</code>
+        </p>
+
+
+        
+
+        <div class="container-fluid module">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>Declarations<a href="https://angular.io/api/core/NgModule#declarations" target="_blank" title="Official documentation about module declarations"><span class="fa fa-info-circle"></span></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="../components/NavComponent.html">NavComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../directives/StateDirective.html">StateDirective</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../pipes/StarsPipe.html">StarsPipe</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/FormComponent.html">FormComponent</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Exports<a href="https://angular.io/api/core/NgModule#exports" target="_blank" title="Official documentation about module exports"><span class="fa fa-info-circle"></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                    <a href="../components/NavComponent.html" >NavComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../directives/StateDirective.html" >StateDirective</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../pipes/StarsPipe.html" >StarsPipe</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../components/FormComponent.html" >FormComponent</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tab-pane fade tab-source-code" id="c-source">
+        <pre class="line-numbers"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
+import { CommonModule } from &#x27;@angular/common&#x27;;
+import { RouterModule } from &#x27;@angular/router&#x27;;
+
+import { NgbModule } from &#x27;@ng-bootstrap/ng-bootstrap&#x27;;
+
+import { NavComponent } from &#x27;./components/nav/nav.component&#x27;;
+import { StateDirective } from &#x27;./directives/state/state.directive&#x27;;
+import { StarsPipe } from &#x27;./pipes/stars/stars.pipe&#x27;;
+import { FormComponent } from &#x27;./components/form/form.component&#x27;;
+import { ReactiveFormsModule } from &#x27;@angular/forms&#x27;;
+
+@NgModule({
+  imports: [
+    CommonModule,
+    NgbModule,
+    RouterModule,
+    ReactiveFormsModule
+  ],
+  declarations: [NavComponent, StateDirective, StarsPipe, FormComponent],
+  exports: [
+    NavComponent,
+    StateDirective,
+    StarsPipe,
+    FormComponent
+  ]
+})
+export class SharedModule { }
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+
+    </body>
+</html>

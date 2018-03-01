@@ -8,7 +8,8 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "compodoc": "compodoc -p src/tsconfig.app.json -s"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +27,7 @@
     "bootstrap": "^4.0.0",
     "core-js": "^2.4.1",
     "firebase": "^4.10.1",
+    "node-sass": "^4.7.2",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
   },
